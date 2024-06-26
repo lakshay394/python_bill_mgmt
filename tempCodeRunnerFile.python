@@ -1,0 +1,11 @@
+import os
+name="Lakshay"
+phno="7404204923"
+def checkkun(j):
+    if os.path.isfile(f"D:/project_files/{name} {phno}_{j}.txt")==True:
+        checkkun(j+1)
+    print(f"D:/project_files/{name} {phno}_{j}.txt")
+    a=open(f"D:/project_files/{name} {phno}_{j}.txt","w")
+    a.close()
+
+checkkun(0)
